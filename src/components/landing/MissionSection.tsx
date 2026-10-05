@@ -1,6 +1,6 @@
 import React from 'react';
-import { CheckCircle2, ShieldCheck, Landmark, Layers } from 'lucide-react';
-import { CONTAINER, Reveal, MARK_D } from './landingCommon';
+import { CheckCircle2, ShieldCheck, Landmark } from 'lucide-react';
+import { CONTAINER, Reveal, MARK_D, EthereumMark } from './landingCommon';
 
 const CARDS = [
   { label: 'Audit & reporting', x: 160, y: 35, w: 618, h: 346 },
@@ -129,9 +129,9 @@ export default function MissionSection() {
       icon: <ShieldCheck className="size-9 text-[#0a0a0a]" strokeWidth={1.5} />,
     },
     {
-      title: 'Verifiable on-chain',
-      desc: 'Every transaction is recorded, traceable and auditable, so institutions can prove what they do rather than claim it.',
-      icon: <Layers className="size-9 text-[#0a0a0a]" strokeWidth={1.5} />,
+      title: 'Secured by Ethereum',
+      desc: "Tawf is built on the EVM and inherits Ethereum's security. Every record is public, immutable and independently verifiable, so institutions can prove what they do rather than claim it.",
+      icon: <EthereumMark size={40} />,
     },
     {
       title: 'Built for institutions',
@@ -176,6 +176,10 @@ export default function MissionSection() {
             <p className="max-w-[22ch] text-[clamp(22px,2.6vw,30px)] font-medium leading-[1.16] tracking-tight">Transparent by default. Trust comes from being able to check.</p>
             <p className="max-w-[40ch] text-[14.5px] leading-[1.55] text-white/60">
               Our mission is to rebuild Baitul Maal and Islamic finance for the digital age, with infrastructure institutions can rely on.
+            </p>
+            <p className="mt-4 flex items-center gap-2.5 font-mono text-xs text-white/70">
+              <EthereumMark size={18} light />
+              EVM-compatible: Ethereum tooling and wallets just work.
             </p>
           </Reveal>
         </div>

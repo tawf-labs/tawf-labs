@@ -25,6 +25,23 @@ export function Logo({ size = 28, color = INK, className = '' }: { size?: number
   );
 }
 
+/* Ethereum diamond, drawn in grays only. `light` is for dark backgrounds. */
+export function EthereumMark({ size = 24, light = false, className = '' }: { size?: number; light?: boolean; className?: string }) {
+  const f = light
+    ? ['#d4d4d4', '#8c8c8c', '#e5e5e5', '#8c8c8c', '#ffffff', '#a3a3a3']
+    : ['#343434', '#8c8c8c', '#3c3c3c', '#8c8c8c', '#141414', '#393939'];
+  return (
+    <svg width={size * 0.614} height={size} viewBox="0 0 256 417" className={className} aria-hidden="true">
+      <path fill={f[0]} d="M127.961 0l-2.795 9.5v275.668l2.795 2.79 127.962-75.638z" />
+      <path fill={f[1]} d="M127.962 0L0 212.32l127.962 75.639V154.158z" />
+      <path fill={f[2]} d="M127.961 312.187l-1.575 1.92v98.199l1.575 4.601 128.038-180.32z" />
+      <path fill={f[3]} d="M127.962 416.905v-104.72L0 236.585z" />
+      <path fill={f[4]} d="M127.961 287.958l127.96-75.637-127.96-58.162z" />
+      <path fill={f[5]} d="M0 212.32l127.96 75.638v-133.8z" />
+    </svg>
+  );
+}
+
 export function Reveal({
   children,
   delay = 0,

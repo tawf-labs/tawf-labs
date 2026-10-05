@@ -101,7 +101,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="md:col-span-2">
             <Brand light />
             <p className="mt-5 max-w-sm text-sm leading-relaxed">
-              We build infrastructure for Islamic foundations and Islamic finance institutions.
+              Infrastructure for Islamic foundations and Islamic finance institutions, built on the EVM and secured by Ethereum.
             </p>
           </div>
 

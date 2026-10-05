@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { CONTAINER, Kick, Reveal } from './landingCommon';
+import { CONTAINER, Kick, Reveal, EthereumMark } from './landingCommon';
 
 export default function CtaSection() {
   return (
@@ -29,6 +29,11 @@ export default function CtaSection() {
 
           <p className="mt-6 max-w-[34em] text-[clamp(16px,1.4vw,18px)] leading-[1.6] text-white/60">
             Whether you run an Islamic foundation or an Islamic finance institution, Tawf Labs builds the infrastructure to make it transparent.
+          </p>
+
+          <p className="mt-6 inline-flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.18em] text-white/70">
+            <EthereumMark size={18} light />
+            Built on the EVM. Secured by Ethereum.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
