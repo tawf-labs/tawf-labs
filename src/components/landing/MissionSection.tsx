@@ -125,7 +125,7 @@ export default function MissionSection() {
   const items = [
     {
       title: 'Sharia by design',
-      desc: 'Compliance is part of the protocol, not a report added afterwards. Rules for zakat, waqf and Islamic finance products are encoded into the infrastructure.',
+      desc: 'Compliance is part of the protocol, not an afterthought. Zakat, waqf and finance rules are encoded in the infrastructure.',
       icon: <ShieldCheck className="size-9 text-[#0a0a0a]" strokeWidth={1.5} />,
     },
     {
