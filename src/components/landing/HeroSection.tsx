@@ -17,16 +17,6 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease }}
             className="transform-gpu pr-2 text-center md:text-left"
           >
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.05, ease }}
-              className="mb-5 inline-flex items-center gap-2.5 font-mono text-xs font-medium uppercase tracking-[0.18em] text-[#0a0a0a]"
-            >
-              <span className="size-[7px] rounded-full bg-[#0a0a0a]" />
-              Tawf Labs
-            </motion.p>
-
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
