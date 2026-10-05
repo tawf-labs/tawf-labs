@@ -130,7 +130,7 @@ export default function MissionSection() {
     },
     {
       title: 'Secured by Ethereum',
-      desc: "Tawf is built on the EVM and inherits Ethereum's security. Every record is public, immutable and independently verifiable, so institutions can prove what they do rather than claim it.",
+      desc: "Built on the EVM and inheriting Ethereum's security, so every record is public, immutable and independently verifiable.",
       icon: <EthereumMark size={40} />,
     },
     {
